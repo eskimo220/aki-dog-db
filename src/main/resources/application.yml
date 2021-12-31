@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:mysql://localhost:3307/sample_db}
+    username: mysqluser
+    password: mysqlpass
+
+    hikari:
+      maximum-pool-size: 10
+      connection-init-sql: SET NAMES utf8mb4;
